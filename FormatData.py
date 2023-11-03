@@ -27,6 +27,7 @@ class FormatData:
 	def remove_seconds_notation(time):
 		time = str(time)
 		time = time[:-3]
+		time = int(time)
 		return time
 	
 	def remove_minutes_notation(time):
