@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-import matplotlib.ticker as ticker
+# import matplotlib.ticker as ticker
 
 class Visualize():
 	
@@ -34,14 +34,15 @@ class Visualize():
 		plt.subplots_adjust(bottom = 0.2, left = 0.2)
 		plt.scatter(dates, times, s=scaled_pain, alpha=0.5)
 
-		ax.xaxis.set_major_locator(ticker.MultipleLocator(1)) 
-		ax.yaxis.set_major_locator(ticker.MultipleLocator(4))
+		ax.set_yticks([0, 4, 8, 12, 16, 20, 24])
+		# ax.xaxis.set_major_locator(ticker.MultipleLocator(1)) 
+		# ax.yaxis.set_major_locator(ticker.MultipleLocator(4))
 
 		plt.xticks(fontsize=6, rotation=45)
 		plt.xlabel('Date', fontsize=8)
 		plt.ylabel('Time of Day', fontsize=8, )
 		plt.title('My Symptom Record')
 		plt.savefig('static/images/bubbleplot.png')
-		plt.show()
+		# plt.show()
 		return "bubbleplot"
 
