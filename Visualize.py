@@ -23,7 +23,7 @@ class Visualize():
 		
 		plt.savefig('static/images/scatterplot.png')
 		#plt.show()
-		return "https://symptom_logger_api_v.onrender.com/static/images/scatterplot.png"
+		return "https://visualizesl.onrender.com/static/images/scatterplot.png"
 	
 	def bubbleplot(dates, times, pain):
 		# Square the 'pain' values to make the size differences more distinct for the simple 1-10 pain scale
@@ -46,5 +46,5 @@ class Visualize():
 		plt.title('My Symptom Record')
 		plt.savefig('static/images/bubbleplot.png')
 		# plt.show()
-		return "https://symptom_logger_api_v.onrender.com/static/images/bubbleplot.png"
+		return "https://visualizesl.onrender.com/static/images/bubbleplot.png"
 
