@@ -21,7 +21,7 @@ class Visualize():
 		plt.ylabel('Time of Day', fontsize=8)
 		plt.title('My Symptom Record')
 		
-		plt.savefig('static/images/scatterplot.png')
+		plt.savefig('static/images/scatterplot.png', transparent=True)
 		#plt.show()
 		return "https://visualizesl.onrender.com/static/images/scatterplot.png"
 	
@@ -44,7 +44,6 @@ class Visualize():
 		plt.xlabel('Date', fontsize=8)
 		plt.ylabel('Time of Day', fontsize=8, )
 		plt.title('My Symptom Record')
-		plt.savefig('static/images/bubbleplot.png')
+		plt.savefig('static/images/bubbleplot.png', transparent=True)
 		# plt.show()
 		return "https://visualizesl.onrender.com/static/images/bubbleplot.png"
-
