@@ -22,5 +22,5 @@ def visualize():
 		return jsonify({"error": "No data to summarize"})
 
 if __name__ == '__main__':
-	app.run(debug=True)
-	#app.run()
+	# app.run(debug=True)
+	app.run()
