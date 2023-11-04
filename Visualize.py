@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 # import matplotlib.ticker as ticker
 
+# UUID - Update this to give each image a unique identifier so the URL sent back to the user is unique
+
 class Visualize():
 	
 	def scatterplot(dates, times):
@@ -21,7 +23,7 @@ class Visualize():
 		
 		plt.savefig('static/images/scatterplot.png')
 		#plt.show()
-		return "scatterplot"
+		return "https://symptom_logger_api_v.onrender.com/static/images/scatterplot.png"
 	
 	def bubbleplot(dates, times, pain):
 		# Square the 'pain' values to make the size differences more distinct for the simple 1-10 pain scale
@@ -44,5 +46,5 @@ class Visualize():
 		plt.title('My Symptom Record')
 		plt.savefig('static/images/bubbleplot.png')
 		# plt.show()
-		return "bubbleplot"
+		return "https://symptom_logger_api_v.onrender.com/static/images/bubbleplot.png"
 
