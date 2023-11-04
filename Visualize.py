@@ -12,7 +12,7 @@ class Visualize():
 		ax=plt.subplot()
 		plt.subplots_adjust(bottom = 0.2, left = 0.2)
 
-		plt.scatter(dates, times, marker='x', color='red', s=40)
+		plt.scatter(dates, times, marker='x', color='#5e747f', s=40)
 
 		ax.set_yticks([0, 4, 8, 12, 16, 20, 24]) # This sets the y-axis to show every 4 hours
 		
