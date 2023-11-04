@@ -34,7 +34,7 @@ class Visualize():
 		plt.figure(figsize=(4, 3))
 		ax=plt.subplot()
 		plt.subplots_adjust(bottom = 0.2, left = 0.2)
-		plt.scatter(dates, times, s=scaled_pain, alpha=0.5)
+		plt.scatter(dates, times, s=scaled_pain, alpha=0.5, color='#5e747f')
 
 		ax.set_yticks([0, 4, 8, 12, 16, 20, 24])
 		# ax.xaxis.set_major_locator(ticker.MultipleLocator(1)) 
